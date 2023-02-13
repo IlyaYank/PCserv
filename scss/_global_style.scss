@@ -15,6 +15,7 @@ $font-family_1: Helvetica Neue;
 $base-line-height: 1.5;
 
 // Размеры сайта
+$background-site: #354152;
 
 .container {
   max-width: 1970px;
@@ -25,9 +26,9 @@ $base-line-height: 1.5;
 // Кнопки на сайте стили
 .btn {
   display: inline-block;
+  text-align: center;
   padding: 8px 50px;
-  border-radius: 15px;
-  background: linear-gradient(160deg, #8ee4b9 0%, #185547 100%);
+  background: #75d2aa;
   width: 100%;
   transition: all 0.3s;
   color: $white-color-text;
@@ -63,8 +64,7 @@ $base-line-height: 1.5;
 //лого
 
 .header__logo {
-  width: 100%;
-  width: 72px;
+  min-width: 72px;
   height: 72px;
 }
 //Окна уведомления
@@ -99,4 +99,13 @@ $base-line-height: 1.5;
   width: 20px;
   height: 20px;
   background: url("../img/close.svg");
+}
+
+.background-site {
+  background-color: $background-site;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
